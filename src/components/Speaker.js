@@ -14,7 +14,6 @@ function Sessions({ sessions }) {
   );
 }
 
-
 function SpeakerImage({ id, first, last }) {
   return (
     <div className="speaker-img d-flex flex-row justify-content-center align-items-center h-300">
@@ -28,7 +27,7 @@ function SpeakerImage({ id, first, last }) {
   );
 }
 
-function SpeakerInfo({
+function SpeakerDemographics({
   first,
   last,
   bio,
@@ -60,15 +59,15 @@ function SpeakerInfo({
   );
 }
 
-function Speaker({ speaker }) {
+function Speaker({ speaker, showSessions }) {
   const { id, first, last, sessions } = speaker;
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-xs-12">
       <div className="card card-height p-4 mt-4">
         <SpeakerImage id={id} first={first} last={last} />
-        <SpeakerInfo {...speaker} />
+        <SpeakerDemographics {...speaker} />
       </div>
-      <Sessions sessions={sessions} />
+      {showSessions === true ? <Sessions sessions={sessions} /> : null}
     </div>
   );
 }
