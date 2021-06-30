@@ -7,12 +7,12 @@ function Header({ theme }) {
             <img alt="SVCC Home Page" src="/images/SVCCLogo.png" />
           </div>
           <div className="light">
-            <h4 className="header-title">Silicon Valley Code Camp</h4>
+            <h4 className="header-title">My React Trainning</h4>
           </div>
           <div className={theme === "light" ? "" : "text-info"}>
-            Hello Mr. Smith &nbsp;&nbsp;
+            Hello Mr. James 
             <span>
-              <a href="#">sign-out</a>
+              <a href="#">log-out</a>
             </span>
           </div>
         </div>
