@@ -13,7 +13,13 @@ function Sessions({ sessions }) {
     </div>
   );
 }
-
+function Sessions({ sessions }) {
+  return (
+    <div className="sessionBox card h-250">
+      <Session {...sessions[0]} />
+    </div>
+  );
+}
 function SpeakerImage({ id, first, last }) {
   return (
     <div className="speaker-img d-flex flex-row justify-content-center align-items-center h-300">
