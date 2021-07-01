@@ -1,9 +1,8 @@
-import {ThemeContext} from "../context/ThemeContext" ;
-import React, {useContext} from "react" ;
+import { ThemeContext } from "../contexts/ThemeContext";
+import { useContext } from "react";
 
 function Header() {
-
-  const { theme } = useContext(ThemeContext) ;
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="padT4 padB4">
@@ -13,7 +12,7 @@ function Header() {
             <img alt="SVCC Home Page" src="/images/SVCCLogo.png" />
           </div>
           <div className="light">
-            <h4 className="header-title">My React Sample</h4>
+            <h4 className="header-title">My React Project</h4>
           </div>
           <div className={theme === "light" ? "" : "text-info"}>
             Hello Mr. John &nbsp;&nbsp;

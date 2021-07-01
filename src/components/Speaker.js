@@ -60,7 +60,7 @@ function SpeakerFavorite({ favorite, onFavoriteToggle }) {
   );
 }
 
-function SpeakerInfo({
+function SpeakerDemographics({
   first,
   last,
   bio,
@@ -103,7 +103,7 @@ function Speaker({ speaker, showSessions, onFavoriteToggle }) {
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-xs-12">
       <div className="card card-height p-4 mt-4">
         <SpeakerImage id={id} first={first} last={last} />
-        <SpeakerInfo {...speaker} onFavoriteToggle={onFavoriteToggle} />
+        <SpeakerDemographics {...speaker} onFavoriteToggle={onFavoriteToggle} />
       </div>
       {showSessions === true ? <Sessions sessions={sessions} /> : null}
     </div>

@@ -1,14 +1,13 @@
 import Header from "./Header";
 import Speakers from "./Speakers";
-import Layout from "./Layout" ;
+import Layout from "./Layout";
 
 function App() {
-
   return (
-    <Layout startingTheme = "light">
+    <Layout startingTheme="light">
       <div>
-        <Header  />
-        <Speakers  />
+        <Header />
+        <Speakers />
       </div>
     </Layout>
   );
