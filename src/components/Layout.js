@@ -15,16 +15,15 @@ function LayoutNoThemeProvider( {startingTheme, children} ){
 
     const {theme} = useContext( ThemeContext ) ;
 
-    return (
-        <ThemeProvider startingTheme={startingTheme}>
-          <div
-            className={
-              theme === "light" ? "container-fluid light" : "container-fluid dark"
-            }
-          >
-            {children}
-          </div>
-        </ThemeProvider>
+    return (        
+        <div
+        className={
+            theme === "light" ? "container-fluid light" : "container-fluid dark"
+        }
+        >
+        {children}
+        </div>
+    
       );
 }
 
