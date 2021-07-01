@@ -1,5 +1,6 @@
-import {ThemeContext} from "./App" ;
-import {useContext} from "react" ;
+import {ThemeContext} from "../context/ThemeContext" ;
+import React, {useContext} from "react" ;
+
 
 function SpeakersToolbar({ showSessions, setShowSessions }) {
 
